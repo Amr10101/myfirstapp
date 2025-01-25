@@ -169,3 +169,83 @@ main {
 .hidden {
   display: none;
 }
+/* Add these media queries at the bottom of your CSS file */
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  main {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 90vh;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .player {
+    padding: 4rem 2rem;
+    flex: none;
+    min-height: 45vh;
+  }
+
+  .name {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .score {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .current {
+    width: 80%;
+    padding: 1.5rem;
+    margin-top: auto;
+  }
+
+  .current-label {
+    font-size: 1.5rem;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    position: static;
+    transform: none;
+    width: 80%;
+    max-width: 250px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .btn--new {
+    order: -1;
+    margin-bottom: 3rem;
+  }
+
+  .btn--roll {
+    order: 1;
+  }
+
+  .btn--hold {
+    order: 2;
+  }
+
+  .dice {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 2rem auto;
+    height: 8rem;
+  }
+}
